@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    var apiUrl = '//blog.yellowscale.com/ghost/api/v0.1/',
+    var apiUrl = '//www.yellowscale.com/ghost/api/v0.1/',
         clientId,
         clientSecret,
         url,
