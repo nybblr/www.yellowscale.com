@@ -1,753 +1,343 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Yellowscale | Photography by Jonathan Lee Martin</title>
+  <link rel="shortcut icon" href="img/favicon.png" type="image/png">
 
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- BEGIN PRELOAD -->
+  <link rel="preload" href="home/index.css" as="style">
+  <link rel="stylesheet" href="home/index.css">
 
-    <title>Yellowscale | Photography, minimalist travel guides &amp; digital nomad tips.</title>
-    <meta name="HandheldFriendly" content="True" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link rel="preload" href="https://fonts.gstatic.com/s/playfairdisplay/v13/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://fonts.gstatic.com/s/playfairdisplay/v13/nuFlD-vYSZviVYUb_rj3ij__anPXBYf9lW4e5g.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- END PRELOAD -->
 
-    <link rel="stylesheet" type="text/css" href="/assets/built/screen.css?v=9d4d2c0065" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-30173272-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-30173272-2');
+  </script>
 
-    <script src="/assets/js/lazysizes.min.js?v=9d4d2c0065" async=""></script>
-
-    <meta name="description" content="Digital nomad tips and minimalist travel guides from a chronic globetrotter and fine art landscape photographer in Atlanta. By day I work remotely as a developer + international trainer, but at twilight I scale mountains to discover non-touristy landscapes." />
-    <link rel="shortcut icon" href="/favicon.png" type="image/png" />
-    <link rel="canonical" href="https://blog.yellowscale.com/" />
-    <meta name="referrer" content="no-referrer-when-downgrade" />
-    <link rel="next" href="https://blog.yellowscale.com/page/2/" />
-    
-    <meta property="og:site_name" content="Yellowscale" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Yellowscale" />
-    <meta property="og:description" content="Digital nomad tips and minimalist travel guides from a chronic globetrotter and fine art landscape photographer in Atlanta. By day I work remotely as a developer + international trainer, but at twilight I scale mountains to discover non-touristy landscapes." />
-    <meta property="og:url" content="https://blog.yellowscale.com/" />
-    <meta property="og:image" content="https://blog.yellowscale.com/content/images/2018/04/banner.jpg" />
-    <meta property="article:publisher" content="https://www.facebook.com/yellowscale" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Yellowscale" />
-    <meta name="twitter:description" content="Digital nomad tips and minimalist travel guides from a chronic globetrotter and fine art landscape photographer in Atlanta. By day I work remotely as a developer + international trainer, but at twilight I scale mountains to discover non-touristy landscapes." />
-    <meta name="twitter:url" content="https://blog.yellowscale.com/" />
-    <meta name="twitter:image" content="https://blog.yellowscale.com/content/images/2018/04/banner.jpg" />
-    <meta name="twitter:site" content="@nybblr" />
-    <meta property="og:image:width" content="2000" />
-    <meta property="og:image:height" content="852" />
-    
-    <script type="application/ld+json">
+  <!-- BEGIN SEO tags -->
+  <meta name="description" content="Digital nomad tips and minimalist travel guides from a chronic globetrotter and fine art landscape photographer in Atlanta. By day I work remotely as a developer + international trainer, but at twilight I scale mountains to discover non-touristy landscapes." />
+  <link rel="canonical" href="https://www.yellowscale.com/" />
+  <meta name="referrer" content="no-referrer-when-downgrade" />
+  <meta property="og:site_name" content="Yellowscale by Jonathan Lee Martin" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Yellowscale by Jonathan Lee Martin" />
+  <meta property="og:description" content="Digital nomad tips and minimalist travel guides from a chronic globetrotter and fine art landscape photographer in Atlanta. By day I work remotely as a developer + international trainer, but at twilight I scale mountains to discover non-touristy landscapes." />
+  <meta property="og:url" content="https://www.yellowscale.com/" />
+  <meta property="og:image" content="https://www.yellowscale.com/img/banner.png" />
+  <meta property="article:publisher" content="https://www.facebook.com/yellowscale" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Yellowscale by Jonathan Lee Martin" />
+  <meta name="twitter:description" content="Digital nomad tips and minimalist travel guides from a chronic globetrotter and fine art landscape photographer in Atlanta. By day I work remotely as a developer + international trainer, but at twilight I scale mountains to discover non-touristy landscapes." />
+  <meta name="twitter:url" content="https://www.yellowscale.com/" />
+  <meta name="twitter:image" content="https://www.yellowscale.com/img/banner.png" />
+  <meta name="twitter:site" content="@nybblr" />
+  <script type="application/ld+json">
 {
-    "@context": "https://schema.org",
-    "@type": "Website",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Yellowscale",
-        "logo": {
-            "@type": "ImageObject",
-            "url": "https://blog.yellowscale.com/content/images/2017/12/logo.svg",
-            "width": 152,
-            "height": 46
-        }
-    },
-    "url": "https://blog.yellowscale.com/",
-    "image": {
-        "@type": "ImageObject",
-        "url": "https://blog.yellowscale.com/content/images/2018/04/banner.jpg",
-        "width": 2000,
-        "height": 852
-    },
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://blog.yellowscale.com/"
-    },
-    "description": "Digital nomad tips and minimalist travel guides from a chronic globetrotter and fine art landscape photographer in Atlanta. By day I work remotely as a developer + international trainer, but at twilight I scale mountains to discover non-touristy landscapes."
+  "@context": "https://schema.org",
+  "@type": "Website",
+  "publisher": {
+    "@type": "Person",
+    "sameAs": [
+      "https://jonathanleemartin.com/",
+      "https://www.yellowscale.com/",
+      "https://blog.yellowscale.com/",
+      "https://www.nybblr.com/",
+      "https://www.facebook.com/yellowscale",
+      "https://twitter.com/nybblr"
+    ],
+    "name": "Jonathan Lee Martin",
+    "url": "https://jonathanleemartin.com/",
+    "image": "https://jonathanleemartin.com/img/budapest.jpg"
+  },
+  "url": "https://www.yellowscale.com/",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.yellowscale.com/img/banner.png"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.yellowscale.com/"
+  },
+  "description": "Digital nomad tips and minimalist travel guides from a chronic globetrotter and fine art landscape photographer in Atlanta. By day I work remotely as a developer + international trainer, but at twilight I scale mountains to discover non-touristy landscapes."
 }
-    </script>
+  </script>
+  <!-- END SEO tags -->
 
-    <script type="text/javascript" src="/public/ghost-sdk.js?v=9d4d2c0065"></script>
-<script type="text/javascript">
-ghost.init({
-	clientId: "ghost-frontend",
-	clientSecret: "c3abea999be8"
-});
-</script>
-    <meta name="generator" content="Ghost 1.19" />
-    <link rel="alternate" type="application/rss+xml" title="Yellowscale" href="https://blog.yellowscale.com/rss/" />
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-30173272-4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-30173272-4');
-</script>
-
-<style type="text/css">
-.site-logo {
-    max-height: 80px;
-    height: 80px;
-}
-@media (max-width: 750px) {
-.site-logo {
-    max-height: 50px;
-    height: 50px;
-}
-}
-.instagram-media {
-	width: 100%;
-}
-</style>
-
+  <script async src="https://unpkg.com/lazysizes@4.0.4/lazysizes.min.js"></script>
 </head>
-<body class="home-template">
 
-    <div class="site-wrapper">
+<body class="js-navbar no-transition">
+  <nav class="navbar js-navbar-scroll">
+    <a class="logo js-toggle-menu" href="#">
+      <img alt="Yellowscale Logo" src="img/favicon.svg">
+    </a>
+    <h1 class="title js-toggle-menu">Yellowscale by <strong>Jonathan Lee Martin</strong></h1>
+    <a class="menu-arrow js-toggle-menu" href="#">︙</a>
+    <ul class="menu">
+      <li>
+        <a rel="noopener" target="_blank" href="https://blog.yellowscale.com/">Blog</a>
+      </li>
+      <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.flickr.com/photos/nybblr/sets/72157689322762261">Portfolio</a>
+      </li>
+      <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.youtube.com/channel/UCXzW75NP8kpRAC-fXKvpl-Q">Vlogs</a>
+      </li>
+      <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://us4.campaign-archive.com/home/?u=06192382d0d99bb3a3f789d30&id=e4d355460f">Newsletter</a>
+      </li>
+      <li>
+        <a rel="noopener" target="_blank" href="https://jonathanleemartin.com">About</a>
+      </li>
+    </ul>
+    <section class="about">
+      <p>I’m <a rel="noopener" target="_blank" href="https://jonathanleemartin.com">Jonathan Lee Martin</a>, a globetrotting digital nomad and fine art landscape photographer from Atlanta, GA. By day I work as a <a rel="noopener" target="_blank" href="https://jonathanleemartin.com/">developer &amp; international trainer</a>, but at twilight I scale mountains to discover unique landscapes.</p>
+      <p>Five years ago I didn’t plan to globetrot, but the tourist-clogged cities drove me to the mountains where, through the medium of photography, I stoke my wanderlust and <a rel="noopener" target="_blank" href="https://blog.yellowscale.com/">blog about these escapades</a> to awaken it in others.</p>
+      <p>I love meeting people from all over the world! Say hello to <a href="mailto:hi@yellowscale.com" target="_blank" >hi@yellowscale.com</a> or connect on social media.</p>
+      <ul class="social">
+        <li>
+          <a rel="noopener noreferrer" target="_blank" href="https://www.youtube.com/channel/UCXzW75NP8kpRAC-fXKvpl-Q">
+            <img alt="YouTube" src="img/social/youtube.svg">
+          </a>
+        </li>
+        <li>
+          <a rel="noopener noreferrer" target="_blank" href="https://www.facebook.com/yellowscale">
+            <img alt="Facebook" src="img/social/facebook.svg">
+          </a>
+        </li>
+        <li>
+          <a rel="noopener noreferrer" target="_blank" href="https://twitter.com/nybblr">
+            <img alt="Twitter" src="img/social/twitter.svg">
+          </a>
+        </li>
+        <li>
+          <a rel="noopener noreferrer" target="_blank" href="https://www.flickr.com/photos/nybblr/">
+            <img alt="Flickr" src="img/social/flickr.svg">
+          </a>
+        </li>
+        <li>
+          <a rel="noopener noreferrer" target="_blank" href="https://500px.com/nybblr">
+            <img alt="500px" src="img/social/500px.svg">
+          </a>
+        </li>
+        <li>
+          <a rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/nybblr/">
+            <img alt="Instagram" src="img/social/instagram.svg">
+          </a>
+        </li>
+      </ul>
+    </section>
+  </nav>
+  <ul class="gallery">
+    <li>
+      <figure>
+        <img src="" alt="Mt. Bachelor over Cascade Lakes, Bend, Oregon" class="lazyload" data-src="img/portfolio/mt-bachelor-cascade-lakes-bend-oregon.jpg">
+        <figcaption>
+          <h2>Mt. Bachelor, Oregon</h2>
+        </figcaption>
+      </figure>
+    </li>
+    <li>
+      <a rel="noopener" target="_blank" href="https://blog.yellowscale.com/" class="card blog">
+        <section>
+          <p>
+            Landscape photography.<br>
+            Minimalist travel tips.<br>
+            Digital nomad stuff.
+          </p>
+          <hr>
+          <h1>Yellowscale Blog ›</h1>
+        </section>
+      </a>
+    </li>
+    <li>
+      <figure>
+        <img src="" alt="Road’s End Beach, Lincoln City, Oregon" class="lazyload" data-src="img/portfolio/roads-end-beach-oregon.jpg">
+        <figcaption>
+          <h2>Road’s End, Oregon</h2>
+        </figcaption>
+      </figure>
+    </li>
+    <li>
+      <figure>
+        <img src="" alt="Fog in Snowdonia National Park, Wales, UK" class="lazyload" data-src="img/portfolio/snowdonia-national-park-wales-uk.jpg">
+        <figcaption>
+          <h2>Snowdonia, Wales</h2>
+        </figcaption>
+      </figure>
+    </li>
+    <li>
+      <figure>
+        <img src="" alt="South Stack Lighthouse, Wales, UK" class="lazyload" data-src="img/portfolio/south-stack-lighthouse-wales-uk.jpg">
+        <figcaption>
+          <h2>South Stack, Wales</h2>
+        </figcaption>
+      </figure>
+    </li>
+    <li>
+      <a rel="noopener noreferrer" target="_blank" href="https://www.youtube.com/channel/UCXzW75NP8kpRAC-fXKvpl-Q" class="card vlogs">
+        <section>
+          <p>
+            Travel &amp; photography.<br>
+            10 minutes every week.
+          </p>
+          <hr>
+          <h1>Vlogs on YouTube ›</h1>
+        </section>
+      </a>
+    </li>
+    <li>
+      <figure>
+        <img src="" alt="Brunate, Lago di Como, Italy" class="lazyload" data-src="img/portfolio/brunate-sunset-lago-di-como-italy.jpg">
+        <figcaption>
+          <h2>Brunate, Italy</h2>
+        </figcaption>
+      </figure>
+    </li>
+    <li>
+      <figure>
+        <img src="" alt="Loch Garry in the Scottish Highlands, UK" class="lazyload" data-src="img/portfolio/loch-garry-highlands-scotland-uk.jpg">
+        <figcaption>
+          <h2>Loch Garry, Scotland</h2>
+        </figcaption>
+      </figure>
+    </li>
+    <li>
+      <figure>
+        <img src="" alt="Man O’ War Beach, Dorset, England, UK" class="lazyload" data-src="img/portfolio/man-o-war-beach-dorset-jurassic-coast-england-uk.jpg">
+        <figcaption>
+          <h2>Man O’ War Bay, England</h2>
+        </figcaption>
+      </figure>
+    </li>
+    <li>
+      <section class="card newsletter">
+        <div>
+          <h1>Keep up with new adventures.</h1>
 
-        
-<header class="site-header outer " style="background-image: url(/content/images/2018/04/banner.jpg)">
-    <div class="inner">
-        <div class="site-header-content">
-            <h1 class="site-title">
-                    <img class="site-logo" src="/content/images/2017/12/logo.svg" alt="Yellowscale" />
-            </h1>
-            <h2 class="site-description">Photography, travel &amp; digital nomad tips.</h2>
+          <!-- Begin MailChimp Signup Form -->
+          <form class="subscribe-form" action="https://yellowscale.us4.list-manage.com/subscribe/post?u=06192382d0d99bb3a3f789d30&amp;id=e4d355460f" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+            <input type="email" value="" aria-label="Email address" name="EMAIL" class="required email" placeholder="Email address">
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_06192382d0d99bb3a3f789d30_e4d355460f" tabindex="-1" value=""></div>
+            <input type="submit" value="Subscribe to Newsletter" name="subscribe" class="button submit">
+          </form>
+          <!--End mc_embed_signup-->
+          <ul class="social">
+            <li>
+              <a rel="noopener noreferrer" target="_blank" href="https://www.youtube.com/channel/UCXzW75NP8kpRAC-fXKvpl-Q">
+                <img alt="YouTube" src="img/social/youtube.svg">
+              </a>
+            </li>
+            <li>
+              <a rel="noopener noreferrer" target="_blank" href="https://www.facebook.com/yellowscale">
+                <img alt="Facebook" src="img/social/facebook.svg">
+              </a>
+            </li>
+            <li>
+              <a rel="noopener noreferrer" target="_blank" href="https://twitter.com/nybblr">
+                <img alt="Twitter" src="img/social/twitter.svg">
+              </a>
+            </li>
+            <li>
+              <a rel="noopener noreferrer" target="_blank" href="https://www.flickr.com/photos/nybblr/">
+                <img alt="Flickr" src="img/social/flickr.svg">
+              </a>
+            </li>
+            <li>
+              <a rel="noopener noreferrer" target="_blank" href="https://500px.com/nybblr">
+                <img alt="500px" src="img/social/500px.svg">
+              </a>
+            </li>
+            <li>
+              <a rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/nybblr/">
+                <img alt="Instagram" src="img/social/instagram.svg">
+              </a>
+            </li>
+          </ul>
         </div>
-        <nav class="site-nav">
-    <div class="site-nav-left">
-            <ul class="nav" role="menu">
-    <li class="nav-home" role="menuitem"><a href="https://jonathanleemartin.com/">Home</a></li>
-    <li class="nav-portfolio" role="menuitem"><a href="https://www.yellowscale.com/">Portfolio</a></li>
-    <li class="nav-packing-list" role="menuitem"><a href="https://blog.yellowscale.com/ultralight-digital-nomad-packing-list/">Packing List</a></li>
-    <li class="nav-newsletter" role="menuitem"><a href="#subscribe">Newsletter</a></li>
-    <li class="nav-youtube" role="menuitem"><a href="https://www.youtube.com/channel/UCXzW75NP8kpRAC-fXKvpl-Q">YouTube</a></li>
-    <li class="nav-instagram" role="menuitem"><a href="https://www.instagram.com/nybblr">Instagram</a></li>
-    <li class="nav-500px" role="menuitem"><a href="https://500px.com/nybblr">500px</a></li>
-    <li class="nav-flickr" role="menuitem"><a href="https://www.flickr.com/photos/nybblr">Flickr</a></li>
-</ul>
-
-    </div>
-    <div class="site-nav-right">
-        <div class="social-links">
-            <a class="social-link social-link-yt" href="https://www.youtube.com/channel/UCXzW75NP8kpRAC-fXKvpl-Q" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 234.66667 165.33333" height="165.333" width="234.667"><path d="M93.333 117.558V47.775l61.334 34.893zm136.43-91.74c-2.699-10.163-10.651-18.166-20.747-20.882C190.716 0 117.333 0 117.333 0S43.951 0 25.651 4.936C15.554 7.652 7.602 15.655 4.904 25.817 0 44.237 0 82.667 0 82.667s0 38.43 4.904 56.85c2.698 10.162 10.65 18.164 20.747 20.881 18.3 4.935 91.682 4.935 91.682 4.935s73.383 0 91.683-4.935c10.096-2.717 18.048-10.72 20.747-20.882 4.904-18.42 4.904-56.85 4.904-56.85s0-38.43-4.904-56.849" fill="#ffffff"/></svg>
-</a>
-                <a class="social-link social-link-fb" href="https://www.facebook.com/yellowscale" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
-</a>
-                <a class="social-link social-link-tw" href="https://twitter.com/nybblr" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
-</a>
-        </div>
-            <a class="rss-button" href="https://feedly.com/i/subscription/feed/https://blog.yellowscale.com/rss/" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="6.18" cy="17.82" r="2.18"/><path d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"/></svg>
-</a>
-    </div>
-</nav>
-    </div>
-</header>
-
-<main id="site-main" class="site-main outer" role="main">
-    <div class="inner">
-
-        <div class="post-feed">
-
-                <article class="post-card post tag-announcements tag-photography">
-        <a class="post-card-image-link" href="/shiny-new-yellowscale-com/">
-            <img class="post-card-image lazyload" data-src="/content/images/2018/08/yellowscale-relaunch.jpg" alt="Shiny new Yellowscale.com!"/>
-        </a>
-    <div class="post-card-content">
-        <a class="post-card-content-link" href="/shiny-new-yellowscale-com/">
-            <header class="post-card-header">
-                    <span class="post-card-tags">Announcements</span>
-                <h2 class="post-card-title">Shiny new Yellowscale.com!</h2>
-            </header>
-            <section class="post-card-excerpt">
-                <p>Another weekend, another website! 📸 Yellowscale.com has a handcrafted, from-scratch taste to it — even if it isn’t certified organic.</p>
-            </section>
-        </a>
-        <footer class="post-card-meta">
-                <img class="author-profile-image" src="//www.gravatar.com/avatar/6dc50195bf39376a9154e48d6b5df778?s&#x3D;250&amp;d&#x3D;mm&amp;r&#x3D;x" alt="Jonathan Lee Martin" />
-            <span class="post-card-author"><a href="/author/jonathan/">Jonathan Lee Martin</a></span>
-        </footer>
-    </div>
-</article>
-
-
-                <article class="post-card post tag-vlog tag-travel">
-        <a class="post-card-image-link" href="/everything-you-should-know-about-renting-a-car-in-europe/">
-            <img class="post-card-image lazyload" data-src="/content/images/2018/07/car-rental-lead-image.jpg" alt="Everything You Should Know About Renting a Car in Europe"/>
-        </a>
-    <div class="post-card-content">
-        <a class="post-card-content-link" href="/everything-you-should-know-about-renting-a-car-in-europe/">
-            <header class="post-card-header">
-                    <span class="post-card-tags">Vlog</span>
-                <h2 class="post-card-title">Everything You Should Know About Renting a Car in Europe</h2>
-            </header>
-            <section class="post-card-excerpt">
-                <p>Want to see a country more like a local? 🚗 Car rentals can be a pain, here’s everything you need to know to rent a car in Europe affordably. 💸</p>
-            </section>
-        </a>
-        <footer class="post-card-meta">
-                <img class="author-profile-image" src="//www.gravatar.com/avatar/6dc50195bf39376a9154e48d6b5df778?s&#x3D;250&amp;d&#x3D;mm&amp;r&#x3D;x" alt="Jonathan Lee Martin" />
-            <span class="post-card-author"><a href="/author/jonathan/">Jonathan Lee Martin</a></span>
-        </footer>
-    </div>
-</article>
-
-
-                <article class="post-card post tag-vlog tag-travel tag-digital-nomad">
-        <a class="post-card-image-link" href="/5-tips-to-save-money-on-international-travel/">
-            <img class="post-card-image lazyload" data-src="/content/images/2018/07/vlog-2-lead-image.jpg" alt="5 Tips to Save Money on International Travel"/>
-        </a>
-    <div class="post-card-content">
-        <a class="post-card-content-link" href="/5-tips-to-save-money-on-international-travel/">
-            <header class="post-card-header">
-                    <span class="post-card-tags">Vlog</span>
-                <h2 class="post-card-title">5 Tips to Save Money on International Travel</h2>
-            </header>
-            <section class="post-card-excerpt">
-                <p>Travel is pricey, can you save money without sacrificing your sanity? 🤑 I’ve spent 5 years learning by trial and error — Here are 5 ways I save w/o compromising the trip quality!</p>
-            </section>
-        </a>
-        <footer class="post-card-meta">
-                <img class="author-profile-image" src="//www.gravatar.com/avatar/6dc50195bf39376a9154e48d6b5df778?s&#x3D;250&amp;d&#x3D;mm&amp;r&#x3D;x" alt="Jonathan Lee Martin" />
-            <span class="post-card-author"><a href="/author/jonathan/">Jonathan Lee Martin</a></span>
-        </footer>
-    </div>
-</article>
-
-
-                <article class="post-card post tag-announcements tag-digital-nomad tag-photography">
-        <a class="post-card-image-link" href="/im-vlogging-on-youtube/">
-            <img class="post-card-image lazyload" data-src="/content/images/2018/07/youtube-lead-image.jpg" alt="I’m vlogging on YouTube: digital nomad lifestyle + photography!"/>
-        </a>
-    <div class="post-card-content">
-        <a class="post-card-content-link" href="/im-vlogging-on-youtube/">
-            <header class="post-card-header">
-                    <span class="post-card-tags">Announcements</span>
-                <h2 class="post-card-title">I’m vlogging on YouTube: digital nomad lifestyle + photography!</h2>
-            </header>
-            <section class="post-card-excerpt">
-                <p>My face in a video player. 🤓 And you thought traveling with one carry-on bag was terrifying! 🎒 I’m vlogging on YouTube!</p>
-            </section>
-        </a>
-        <footer class="post-card-meta">
-                <img class="author-profile-image" src="//www.gravatar.com/avatar/6dc50195bf39376a9154e48d6b5df778?s&#x3D;250&amp;d&#x3D;mm&amp;r&#x3D;x" alt="Jonathan Lee Martin" />
-            <span class="post-card-author"><a href="/author/jonathan/">Jonathan Lee Martin</a></span>
-        </footer>
-    </div>
-</article>
-
-
-                <article class="post-card post tag-packing tag-travel tag-digital-nomad tag-gear featured">
-        <a class="post-card-image-link" href="/ultralight-digital-nomad-packing-list/">
-            <img class="post-card-image lazyload" data-src="/content/images/2018/03/one-bag-packing-list.jpg" alt="The ultralight digital nomad packing list: one carry-on bag, indefinite travel."/>
-        </a>
-    <div class="post-card-content">
-        <a class="post-card-content-link" href="/ultralight-digital-nomad-packing-list/">
-            <header class="post-card-header">
-                    <span class="post-card-tags">Packing</span>
-                <h2 class="post-card-title">The ultralight digital nomad packing list: one carry-on bag, indefinite travel.</h2>
-            </header>
-            <section class="post-card-excerpt">
-                <p>What’s the easiest way to travel? With one carry-on sized backpack. 🎒 Here’s my ultralight digital nomad packing list for indefinite travel.</p>
-            </section>
-        </a>
-        <footer class="post-card-meta">
-                <img class="author-profile-image" src="//www.gravatar.com/avatar/6dc50195bf39376a9154e48d6b5df778?s&#x3D;250&amp;d&#x3D;mm&amp;r&#x3D;x" alt="Jonathan Lee Martin" />
-            <span class="post-card-author"><a href="/author/jonathan/">Jonathan Lee Martin</a></span>
-        </footer>
-    </div>
-</article>
-
-
-                <article class="post-card post tag-travel tag-digital-nomad">
-        <a class="post-card-image-link" href="/how-to-make-a-sabbatical-the-best-investment-of-your-life/">
-            <img class="post-card-image lazyload" data-src="/content/images/2018/07/sabbatical-lead-image.jpg" alt="Are travel sabbaticals crazy, or the best investment of your life?"/>
-        </a>
-    <div class="post-card-content">
-        <a class="post-card-content-link" href="/how-to-make-a-sabbatical-the-best-investment-of-your-life/">
-            <header class="post-card-header">
-                    <span class="post-card-tags">Travel</span>
-                <h2 class="post-card-title">Are travel sabbaticals crazy, or the best investment of your life?</h2>
-            </header>
-            <section class="post-card-excerpt">
-                <p>In a country notorious for the least amount of time off, US workers routinely face burnout. A travel sabbatical is a powerful way to invest in your career: here’s how to count the cost and get started.</p>
-            </section>
-        </a>
-        <footer class="post-card-meta">
-                <img class="author-profile-image" src="//www.gravatar.com/avatar/6dc50195bf39376a9154e48d6b5df778?s&#x3D;250&amp;d&#x3D;mm&amp;r&#x3D;x" alt="Jonathan Lee Martin" />
-            <span class="post-card-author"><a href="/author/jonathan/">Jonathan Lee Martin</a></span>
-        </footer>
-    </div>
-</article>
-
-
-                <article class="post-card post tag-photography tag-travel tag-national-parks">
-        <a class="post-card-image-link" href="/landscape-photography-from-my-15-day-trip-through-western-oregon/">
-            <img class="post-card-image lazyload" data-src="/content/images/2018/06/185A0025.jpg" alt="Landscape photography from my 15 day trip through western Oregon."/>
-        </a>
-    <div class="post-card-content">
-        <a class="post-card-content-link" href="/landscape-photography-from-my-15-day-trip-through-western-oregon/">
-            <header class="post-card-header">
-                    <span class="post-card-tags">Photography</span>
-                <h2 class="post-card-title">Landscape photography from my 15 day trip through western Oregon.</h2>
-            </header>
-            <section class="post-card-excerpt">
-                <p>My second trip to Oregon was epic, challenging and extreme. ❄️🏜🌲🏔🌋 It was also one of the most frustrating trips I’ve taken.</p>
-            </section>
-        </a>
-        <footer class="post-card-meta">
-                <img class="author-profile-image" src="//www.gravatar.com/avatar/6dc50195bf39376a9154e48d6b5df778?s&#x3D;250&amp;d&#x3D;mm&amp;r&#x3D;x" alt="Jonathan Lee Martin" />
-            <span class="post-card-author"><a href="/author/jonathan/">Jonathan Lee Martin</a></span>
-        </footer>
-    </div>
-</article>
-
-
-                <article class="post-card post tag-digital-nomad tag-travel tag-materialism">
-        <a class="post-card-image-link" href="/the-digital-nomad-lifestyle-is-more-about-freedom-and-less-about-travel/">
-            <img class="post-card-image lazyload" data-src="/content/images/2018/05/peitlerkofel-italy.jpg" alt="The digital nomad lifestyle is more about freedom and less about travel."/>
-        </a>
-    <div class="post-card-content">
-        <a class="post-card-content-link" href="/the-digital-nomad-lifestyle-is-more-about-freedom-and-less-about-travel/">
-            <header class="post-card-header">
-                    <span class="post-card-tags">Digital Nomad</span>
-                <h2 class="post-card-title">The digital nomad lifestyle is more about freedom and less about travel.</h2>
-            </header>
-            <section class="post-card-excerpt">
-                <p>A couple weeks ago, someone asked me what it meant to be a digital nomad. Is being a digital nomad just about owning very little and traveling all the time?</p>
-            </section>
-        </a>
-        <footer class="post-card-meta">
-                <img class="author-profile-image" src="//www.gravatar.com/avatar/6dc50195bf39376a9154e48d6b5df778?s&#x3D;250&amp;d&#x3D;mm&amp;r&#x3D;x" alt="Jonathan Lee Martin" />
-            <span class="post-card-author"><a href="/author/jonathan/">Jonathan Lee Martin</a></span>
-        </footer>
-    </div>
-</article>
-
-
-                <article class="post-card post tag-photography tag-tips tag-guest-writer">
-        <a class="post-card-image-link" href="/9-landscape-photography-techniques-to-overcome-editors-block/">
-            <img class="post-card-image lazyload" data-src="/content/images/2018/05/editors-block-lead-image.jpg" alt="9 Landscape Photography Techniques to Overcome Editor’s Block"/>
-        </a>
-    <div class="post-card-content">
-        <a class="post-card-content-link" href="/9-landscape-photography-techniques-to-overcome-editors-block/">
-            <header class="post-card-header">
-                    <span class="post-card-tags">Photography</span>
-                <h2 class="post-card-title">9 Landscape Photography Techniques to Overcome Editor’s Block</h2>
-            </header>
-            <section class="post-card-excerpt">
-                <p>How many landscape photos are stuck in your library, unfinished and unpublished? You’re not alone. 😩 Here’s how to get out of editor’s block.</p>
-            </section>
-        </a>
-        <footer class="post-card-meta">
-                <img class="author-profile-image" src="//www.gravatar.com/avatar/6dc50195bf39376a9154e48d6b5df778?s&#x3D;250&amp;d&#x3D;mm&amp;r&#x3D;x" alt="Jonathan Lee Martin" />
-            <span class="post-card-author"><a href="/author/jonathan/">Jonathan Lee Martin</a></span>
-        </footer>
-    </div>
-</article>
-
-
-                <article class="post-card post tag-digital-nomad tag-productivity tag-travel tag-guest-writer">
-        <a class="post-card-image-link" href="/advance-your-travel-photography-by-spotting-these-cognitive-biases/">
-            <img class="post-card-image lazyload" data-src="/content/images/2018/04/cognitive-biases-lead-image.jpg" alt="Advance Your Travel Photography by Spotting These Cognitive Biases"/>
-        </a>
-    <div class="post-card-content">
-        <a class="post-card-content-link" href="/advance-your-travel-photography-by-spotting-these-cognitive-biases/">
-            <header class="post-card-header">
-                    <span class="post-card-tags">Digital Nomad</span>
-                <h2 class="post-card-title">Advance Your Travel Photography by Spotting These Cognitive Biases</h2>
-            </header>
-            <section class="post-card-excerpt">
-                <p>Irrational behavior is no laughing matter when it prevents you from improving at your craft—and you don’t even realize it. 🧠 Learn how to spot cognitive biases so you can outwit them.</p>
-            </section>
-        </a>
-        <footer class="post-card-meta">
-                <img class="author-profile-image" src="//www.gravatar.com/avatar/6dc50195bf39376a9154e48d6b5df778?s&#x3D;250&amp;d&#x3D;mm&amp;r&#x3D;x" alt="Jonathan Lee Martin" />
-            <span class="post-card-author"><a href="/author/jonathan/">Jonathan Lee Martin</a></span>
-        </footer>
-    </div>
-</article>
-
-
-                <article class="post-card post tag-digital-nomad tag-travel tag-tips">
-        <a class="post-card-image-link" href="/want-to-travel-full-time-your-us-tax-return-might-fund-a-year-off-the-grid/">
-            <img class="post-card-image lazyload" data-src="/content/images/2018/04/tax-day-lead-image.jpg" alt="Want to travel full-time? Your US tax return might fund a year off-the-grid."/>
-        </a>
-    <div class="post-card-content">
-        <a class="post-card-content-link" href="/want-to-travel-full-time-your-us-tax-return-might-fund-a-year-off-the-grid/">
-            <header class="post-card-header">
-                    <span class="post-card-tags">Digital Nomad</span>
-                <h2 class="post-card-title">Want to travel full-time? Your US tax return might fund a year off-the-grid.</h2>
-            </header>
-            <section class="post-card-excerpt">
-                <p>Imagine working remotely from the Alps, living in B&Bs full-time as a location independent consultant. 🇺🇸 Uncle Sam may be able to help when you file your next tax return by substantially reducing your US tax burden!</p>
-            </section>
-        </a>
-        <footer class="post-card-meta">
-                <img class="author-profile-image" src="//www.gravatar.com/avatar/6dc50195bf39376a9154e48d6b5df778?s&#x3D;250&amp;d&#x3D;mm&amp;r&#x3D;x" alt="Jonathan Lee Martin" />
-            <span class="post-card-author"><a href="/author/jonathan/">Jonathan Lee Martin</a></span>
-        </footer>
-    </div>
-</article>
-
-
-                <article class="post-card post tag-travel tag-photography tag-guest-writer tag-tips">
-        <a class="post-card-image-link" href="/fstoppers-discover-unique-landscape-photography-spots-before-takeoff/">
-            <img class="post-card-image lazyload" data-src="/content/images/2018/04/jonathan-martin-brunate-lead-image.jpg" alt="@Fstoppers: Discover Unique Landscape Photography Spots Before Takeoff"/>
-        </a>
-    <div class="post-card-content">
-        <a class="post-card-content-link" href="/fstoppers-discover-unique-landscape-photography-spots-before-takeoff/">
-            <header class="post-card-header">
-                    <span class="post-card-tags">Travel</span>
-                <h2 class="post-card-title">@Fstoppers: Discover Unique Landscape Photography Spots Before Takeoff</h2>
-            </header>
-            <section class="post-card-excerpt">
-                <p>Amazing photos begin with stunning locations. On Fstoppers.com, I cover techniques to discover unique landscapes without tourists and selfie-sticks — pretty pictures included. 😇</p>
-            </section>
-        </a>
-        <footer class="post-card-meta">
-                <img class="author-profile-image" src="//www.gravatar.com/avatar/6dc50195bf39376a9154e48d6b5df778?s&#x3D;250&amp;d&#x3D;mm&amp;r&#x3D;x" alt="Jonathan Lee Martin" />
-            <span class="post-card-author"><a href="/author/jonathan/">Jonathan Lee Martin</a></span>
-        </footer>
-    </div>
-</article>
-
-
-                <article class="post-card post tag-travel tag-photography tag-digital-nomad tag-guest-writer">
-        <a class="post-card-image-link" href="/fstoppers-10-essential-travel-apps-for-nomadic-photographers/">
-            <img class="post-card-image lazyload" data-src="/content/images/2018/04/10-apps-lead-image.jpg" alt="@Fstoppers: 10 Essential Travel Apps for Nomadic Photographers"/>
-        </a>
-    <div class="post-card-content">
-        <a class="post-card-content-link" href="/fstoppers-10-essential-travel-apps-for-nomadic-photographers/">
-            <header class="post-card-header">
-                    <span class="post-card-tags">Travel</span>
-                <h2 class="post-card-title">@Fstoppers: 10 Essential Travel Apps for Nomadic Photographers</h2>
-            </header>
-            <section class="post-card-excerpt">
-                <p>With the right cornucopia of apps, your smartphone is the ultimate travel companion. Digital nomads and travel photographers place particularly stringent requirements on these apps. In my post on Fstoppers.com, we cover</p>
-            </section>
-        </a>
-        <footer class="post-card-meta">
-                <img class="author-profile-image" src="//www.gravatar.com/avatar/6dc50195bf39376a9154e48d6b5df778?s&#x3D;250&amp;d&#x3D;mm&amp;r&#x3D;x" alt="Jonathan Lee Martin" />
-            <span class="post-card-author"><a href="/author/jonathan/">Jonathan Lee Martin</a></span>
-        </footer>
-    </div>
-</article>
-
-
-                <article class="post-card post tag-gear tag-travel tag-photography tag-digital-nomad tag-packing">
-        <a class="post-card-image-link" href="/whats-in-my-camera-bag-for-landscape-photography/">
-            <img class="post-card-image lazyload" data-src="/content/images/2018/03/camera-bag-lead-image.jpg" alt="What’s in My Camera Bag for Landscape Photography?"/>
-        </a>
-    <div class="post-card-content">
-        <a class="post-card-content-link" href="/whats-in-my-camera-bag-for-landscape-photography/">
-            <header class="post-card-header">
-                    <span class="post-card-tags">Gear</span>
-                <h2 class="post-card-title">What’s in My Camera Bag for Landscape Photography?</h2>
-            </header>
-            <section class="post-card-excerpt">
-                <p>Half the fun of being a landscape photographer is nerding out on camera gear. The other half is consolidating my kit so I can travel light as a digital nomad. Here’s what my camera kit looks like for landscape photography trips.</p>
-            </section>
-        </a>
-        <footer class="post-card-meta">
-                <img class="author-profile-image" src="//www.gravatar.com/avatar/6dc50195bf39376a9154e48d6b5df778?s&#x3D;250&amp;d&#x3D;mm&amp;r&#x3D;x" alt="Jonathan Lee Martin" />
-            <span class="post-card-author"><a href="/author/jonathan/">Jonathan Lee Martin</a></span>
-        </footer>
-    </div>
-</article>
-
-
-                <article class="post-card post tag-photo-journal tag-travel tag-adventure tag-photography">
-        <a class="post-card-image-link" href="/photo-journal-spirit-falls/">
-            <img class="post-card-image lazyload" data-src="/content/images/2018/03/spirit-falls.jpg" alt="Photo Journal: Spirit Falls"/>
-        </a>
-    <div class="post-card-content">
-        <a class="post-card-content-link" href="/photo-journal-spirit-falls/">
-            <header class="post-card-header">
-                    <span class="post-card-tags">Photo Journal</span>
-                <h2 class="post-card-title">Photo Journal: Spirit Falls</h2>
-            </header>
-            <section class="post-card-excerpt">
-                <p>Just north of the Oregon-Washington border lies one of the truly hidden gems of the Columbia River Gorge. Spirit Falls has no public trail, and until recently the only known trail down the steep gorge crossed illegally into private land.</p>
-            </section>
-        </a>
-        <footer class="post-card-meta">
-                <img class="author-profile-image" src="//www.gravatar.com/avatar/6dc50195bf39376a9154e48d6b5df778?s&#x3D;250&amp;d&#x3D;mm&amp;r&#x3D;x" alt="Jonathan Lee Martin" />
-            <span class="post-card-author"><a href="/author/jonathan/">Jonathan Lee Martin</a></span>
-        </footer>
-    </div>
-</article>
-
-
-                <article class="post-card post tag-digital-nomad tag-guest-writer tag-travel tag-adventure">
-        <a class="post-card-image-link" href="/fstoppers-how-to-pack-your-gear-and-clothes-in-one-bag-for-indefinite-travel/">
-            <img class="post-card-image lazyload" data-src="/content/images/2018/03/packing-lead-image.jpg" alt="@Fstoppers: How to Pack Your Gear and Clothes in One Bag for Indefinite Travel"/>
-        </a>
-    <div class="post-card-content">
-        <a class="post-card-content-link" href="/fstoppers-how-to-pack-your-gear-and-clothes-in-one-bag-for-indefinite-travel/">
-            <header class="post-card-header">
-                    <span class="post-card-tags">Digital Nomad</span>
-                <h2 class="post-card-title">@Fstoppers: How to Pack Your Gear and Clothes in One Bag for Indefinite Travel</h2>
-            </header>
-            <section class="post-card-excerpt">
-                <p>Planes run out of overhead storage, car crashes happen—travel is hard enough as a tourist, but as a nomadic photographer things can go south fast. In my guest post at Fstoppers.com,</p>
-            </section>
-        </a>
-        <footer class="post-card-meta">
-                <img class="author-profile-image" src="//www.gravatar.com/avatar/6dc50195bf39376a9154e48d6b5df778?s&#x3D;250&amp;d&#x3D;mm&amp;r&#x3D;x" alt="Jonathan Lee Martin" />
-            <span class="post-card-author"><a href="/author/jonathan/">Jonathan Lee Martin</a></span>
-        </footer>
-    </div>
-</article>
-
-
-                <article class="post-card post tag-photo-journal tag-travel tag-adventure tag-photography">
-        <a class="post-card-image-link" href="/photo-journal-mount-hood/">
-            <img class="post-card-image lazyload" data-src="/content/images/2018/03/mount-hood-thumb.jpg" alt="Photo Journal: Mount Hood"/>
-        </a>
-    <div class="post-card-content">
-        <a class="post-card-content-link" href="/photo-journal-mount-hood/">
-            <header class="post-card-header">
-                    <span class="post-card-tags">Photo Journal</span>
-                <h2 class="post-card-title">Photo Journal: Mount Hood</h2>
-            </header>
-            <section class="post-card-excerpt">
-                <p>After a fantastic morning at Lost Lake, I expected to take the rest of the day easy and focus on more accessible locations. Trillium Lake was on my bucket list, and according to</p>
-            </section>
-        </a>
-        <footer class="post-card-meta">
-                <img class="author-profile-image" src="//www.gravatar.com/avatar/6dc50195bf39376a9154e48d6b5df778?s&#x3D;250&amp;d&#x3D;mm&amp;r&#x3D;x" alt="Jonathan Lee Martin" />
-            <span class="post-card-author"><a href="/author/jonathan/">Jonathan Lee Martin</a></span>
-        </footer>
-    </div>
-</article>
-
-
-                <article class="post-card post tag-digital-nomad tag-guest-writer tag-travel tag-adventure">
-        <a class="post-card-image-link" href="/fstoppers-how-to-become-a-digital-nomad-before-you-hit-the-road/">
-            <img class="post-card-image lazyload" data-src="/content/images/2018/03/become-a-digital-nomad-lead-image.jpg" alt="@Fstoppers: How to Become a Digital Nomad Before You Hit the Road"/>
-        </a>
-    <div class="post-card-content">
-        <a class="post-card-content-link" href="/fstoppers-how-to-become-a-digital-nomad-before-you-hit-the-road/">
-            <header class="post-card-header">
-                    <span class="post-card-tags">Digital Nomad</span>
-                <h2 class="post-card-title">@Fstoppers: How to Become a Digital Nomad Before You Hit the Road</h2>
-            </header>
-            <section class="post-card-excerpt">
-                <p>It finally happened! I’m guest writing over at Fstoppers.com about traveling as a digital nomad and landscape photographer. 🎒 Are you interested in becoming a digital nomad and traveling indefinitely? Or just</p>
-            </section>
-        </a>
-        <footer class="post-card-meta">
-                <img class="author-profile-image" src="//www.gravatar.com/avatar/6dc50195bf39376a9154e48d6b5df778?s&#x3D;250&amp;d&#x3D;mm&amp;r&#x3D;x" alt="Jonathan Lee Martin" />
-            <span class="post-card-author"><a href="/author/jonathan/">Jonathan Lee Martin</a></span>
-        </footer>
-    </div>
-</article>
-
-
-                <article class="post-card post tag-photo-journal tag-travel tag-photography tag-adventure">
-        <a class="post-card-image-link" href="/photo-journal-lost-lake-at-mount-hood/">
-            <img class="post-card-image lazyload" data-src="/content/images/2018/02/mount-hood-over-lost-lake-thumb.jpg" alt="Photo Journal: Lost Lake at Mount Hood"/>
-        </a>
-    <div class="post-card-content">
-        <a class="post-card-content-link" href="/photo-journal-lost-lake-at-mount-hood/">
-            <header class="post-card-header">
-                    <span class="post-card-tags">Photo Journal</span>
-                <h2 class="post-card-title">Photo Journal: Lost Lake at Mount Hood</h2>
-            </header>
-            <section class="post-card-excerpt">
-                <p>It’s going on a year since my first trip to Oregon, but there are still so many unfinished shots owing to my inexperience with brilliant snowy backdrops. I decided to tack on</p>
-            </section>
-        </a>
-        <footer class="post-card-meta">
-                <img class="author-profile-image" src="//www.gravatar.com/avatar/6dc50195bf39376a9154e48d6b5df778?s&#x3D;250&amp;d&#x3D;mm&amp;r&#x3D;x" alt="Jonathan Lee Martin" />
-            <span class="post-card-author"><a href="/author/jonathan/">Jonathan Lee Martin</a></span>
-        </footer>
-    </div>
-</article>
-
-
-                <article class="post-card post tag-photo-journal tag-travel tag-photography">
-        <a class="post-card-image-link" href="/photo-journal-south-stack-lighthouse-in-wales/">
-            <img class="post-card-image lazyload" data-src="/content/images/2018/02/south-stack-lighthouse.jpg" alt="Photo Journal: South Stack Lighthouse in Wales"/>
-        </a>
-    <div class="post-card-content">
-        <a class="post-card-content-link" href="/photo-journal-south-stack-lighthouse-in-wales/">
-            <header class="post-card-header">
-                    <span class="post-card-tags">Photo Journal</span>
-                <h2 class="post-card-title">Photo Journal: South Stack Lighthouse in Wales</h2>
-            </header>
-            <section class="post-card-excerpt">
-                <p>One of my all-time favorite shots came from the lighthouse on Holyhead in north Wales. The prior night, we drove the long haul from Devonshire to the hills of north Wales and Snowdonia</p>
-            </section>
-        </a>
-        <footer class="post-card-meta">
-                <img class="author-profile-image" src="//www.gravatar.com/avatar/6dc50195bf39376a9154e48d6b5df778?s&#x3D;250&amp;d&#x3D;mm&amp;r&#x3D;x" alt="Jonathan Lee Martin" />
-            <span class="post-card-author"><a href="/author/jonathan/">Jonathan Lee Martin</a></span>
-        </footer>
-    </div>
-</article>
-
-
-                <article class="post-card post tag-travel tag-photography tag-wanderlust tag-adventure">
-        <a class="post-card-image-link" href="/wish-you-werent-here/">
-            <img class="post-card-image lazyload" data-src="/content/images/2017/12/185A6923.jpg" alt="Wish You [Weren’t] Here"/>
-        </a>
-    <div class="post-card-content">
-        <a class="post-card-content-link" href="/wish-you-werent-here/">
-            <header class="post-card-header">
-                    <span class="post-card-tags">Travel</span>
-                <h2 class="post-card-title">Wish You [Weren’t] Here</h2>
-            </header>
-            <section class="post-card-excerpt">
-                <p>Tired of the crowd of selfie-snapping tourists? The best photo ops are not bucket list tourist destinations: they’re up a mountain or down a snow-covered back road. Here are 10 of my favorite havens across Europe and the US.</p>
-            </section>
-        </a>
-        <footer class="post-card-meta">
-                <img class="author-profile-image" src="//www.gravatar.com/avatar/6dc50195bf39376a9154e48d6b5df778?s&#x3D;250&amp;d&#x3D;mm&amp;r&#x3D;x" alt="Jonathan Lee Martin" />
-            <span class="post-card-author"><a href="/author/jonathan/">Jonathan Lee Martin</a></span>
-        </footer>
-    </div>
-</article>
-
-
-                <article class="post-card post tag-travel tag-digital-nomad tag-adventure tag-materialism">
-        <a class="post-card-image-link" href="/your-map-to-mount-nomad/">
-            <img class="post-card-image lazyload" data-src="/content/images/2018/04/digital-nomad-lead-image-small.jpg" alt="Becoming a Digital Nomad starts today, not tomorrow."/>
-        </a>
-    <div class="post-card-content">
-        <a class="post-card-content-link" href="/your-map-to-mount-nomad/">
-            <header class="post-card-header">
-                    <span class="post-card-tags">Travel</span>
-                <h2 class="post-card-title">Becoming a Digital Nomad starts today, not tomorrow.</h2>
-            </header>
-            <section class="post-card-excerpt">
-                <p>Becoming a Digital Nomad can be daunting, but even if you aren’t ready to travel the world, there are some practical ways to start “getting in shape” today!</p>
-            </section>
-        </a>
-        <footer class="post-card-meta">
-                <img class="author-profile-image" src="//www.gravatar.com/avatar/6dc50195bf39376a9154e48d6b5df778?s&#x3D;250&amp;d&#x3D;mm&amp;r&#x3D;x" alt="Jonathan Lee Martin" />
-            <span class="post-card-author"><a href="/author/jonathan/">Jonathan Lee Martin</a></span>
-        </footer>
-    </div>
-</article>
-
-
-                <article class="post-card post tag-travel tag-adventure tag-tips tag-packing tag-digital-nomad">
-        <a class="post-card-image-link" href="/stuff-that-hasnt-ruined-my-life/">
-            <img class="post-card-image lazyload" data-src="/content/images/2018/03/ditch-lead-image.jpg" alt="12 things to ditch, and 12 to keep as a Digital Nomad."/>
-        </a>
-    <div class="post-card-content">
-        <a class="post-card-content-link" href="/stuff-that-hasnt-ruined-my-life/">
-            <header class="post-card-header">
-                    <span class="post-card-tags">Travel</span>
-                <h2 class="post-card-title">12 things to ditch, and 12 to keep as a Digital Nomad.</h2>
-            </header>
-            <section class="post-card-excerpt">
-                <p>It's hard to be a Digital Nomad if you're loaded down with stuff. Here are 24 things I own or ditched in my noob pursuit of an adventure-friendly lifestyle.</p>
-            </section>
-        </a>
-        <footer class="post-card-meta">
-                <img class="author-profile-image" src="//www.gravatar.com/avatar/6dc50195bf39376a9154e48d6b5df778?s&#x3D;250&amp;d&#x3D;mm&amp;r&#x3D;x" alt="Jonathan Lee Martin" />
-            <span class="post-card-author"><a href="/author/jonathan/">Jonathan Lee Martin</a></span>
-        </footer>
-    </div>
-</article>
-
-
-                <article class="post-card post tag-travel tag-photography tag-adventure tag-tips tag-noob tag-packing tag-materialism tag-digital-nomad no-image">
-    <div class="post-card-content">
-        <a class="post-card-content-link" href="/stuff-is-ruining-your-life/">
-            <header class="post-card-header">
-                    <span class="post-card-tags">Travel</span>
-                <h2 class="post-card-title">Stuff is ruining your life. Musings from a noob digital nomad.</h2>
-            </header>
-            <section class="post-card-excerpt">
-                <p>What if life at home looked the same as life on the road? As a noob digital nomad, the main obstacle to this has been the amount of stuff I own.</p>
-            </section>
-        </a>
-        <footer class="post-card-meta">
-                <img class="author-profile-image" src="//www.gravatar.com/avatar/6dc50195bf39376a9154e48d6b5df778?s&#x3D;250&amp;d&#x3D;mm&amp;r&#x3D;x" alt="Jonathan Lee Martin" />
-            <span class="post-card-author"><a href="/author/jonathan/">Jonathan Lee Martin</a></span>
-        </footer>
-    </div>
-</article>
-
-
-                <article class="post-card post tag-travel tag-yosemite tag-photography tag-adventure tag-tips tag-wanderlust tag-national-parks">
-        <a class="post-card-image-link" href="/yosemite-national-park/">
-            <img class="post-card-image lazyload" data-src="/content/images/2016/04/185A6624.jpg" alt="Hiking, Starving &amp; Freezing on Sentinel Dome"/>
-        </a>
-    <div class="post-card-content">
-        <a class="post-card-content-link" href="/yosemite-national-park/">
-            <header class="post-card-header">
-                    <span class="post-card-tags">Travel</span>
-                <h2 class="post-card-title">Hiking, Starving &amp; Freezing on Sentinel Dome</h2>
-            </header>
-            <section class="post-card-excerpt">
-                <p>Two brothers' escapades during their trek through Yosemite National Park.</p>
-            </section>
-        </a>
-        <footer class="post-card-meta">
-                <img class="author-profile-image" src="//www.gravatar.com/avatar/6dc50195bf39376a9154e48d6b5df778?s&#x3D;250&amp;d&#x3D;mm&amp;r&#x3D;x" alt="Jonathan Lee Martin" />
-            <span class="post-card-author"><a href="/author/jonathan/">Jonathan Lee Martin</a></span>
-        </footer>
-    </div>
-</article>
-
-        </div>
-
-    </div>
-</main>
-
-
-
-
-        <footer class="site-footer outer">
-            <div class="site-footer-content inner">
-                <section class="copyright"><a href="https://blog.yellowscale.com">Yellowscale</a> &copy; 2018</section>
-                <nav class="site-footer-nav">
-                    <a href="#subscribe">Newsletter</a>
-                    <a href="https://www.youtube.com/channel/UCXzW75NP8kpRAC-fXKvpl-Q" target="_blank" rel="noopener">YouTube</a>
-                    <a href="https://www.facebook.com/yellowscale" target="_blank" rel="noopener">Facebook</a>
-                    <a href="https://twitter.com/nybblr" target="_blank" rel="noopener">Twitter</a>
-                    <a href="https://www.instagram.com/nybblr" target="_blank" rel="noopener">Instagram</a>
-                </nav>
-            </div>
-        </footer>
-
-    </div>
-
-    <div id="subscribe" class="subscribe-overlay">
-        <a class="subscribe-overlay-close" href="#"></a>
-        <div class="subscribe-overlay-content">
-                <img class="subscribe-overlay-logo" src="/content/images/2017/12/logo.svg" alt="Yellowscale" />
-            <h1 class="subscribe-overlay-title">Subscribe to Yellowscale</h1>
-            <p class="subscribe-overlay-description">Sign up for minimalist travel tips and off-the-beaten-path locations.</p>
-            <form action="https://yellowscale.us4.list-manage.com/subscribe/post?u=06192382d0d99bb3a3f789d30&amp;id=e4d355460f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
-  <div class="form-group">
-    <input type="email" class="subscribe-email" value="" name="EMAIL" id="mce-EMAIL" placeholder="youremail@example.com">
-  </div>
-  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_06192382d0d99bb3a3f789d30_e4d355460f" tabindex="-1" value=""></div>
-  <button type="submit" name="subscribe" id="mc-embedded-subscribe">Subscribe</button>
-</form>
-        </div>
-    </div>
-
-    <script
-        src="https://code.jquery.com/jquery-3.2.1.min.js"
-        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-        crossorigin="anonymous">
-    </script>
-    <script type="text/javascript" src="/assets/js/jquery.fitvids.js?v=9d4d2c0065"></script>
-
-    <script>
-        var maxPages = parseInt('2');
-    </script>
-    <script src="/assets/js/infinitescroll.js?v=9d4d2c0065"></script>
-
-    
-
-    <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us4.list-manage.com","uuid":"06192382d0d99bb3a3f789d30","lid":"e4d355460f"}) })</script>
-
+      </section>
+    </li>
+    <li>
+      <figure>
+        <img src="" alt="Cabins beneath the Jungfrau, Gimmelwald, Switzerland" class="lazyload" data-src="img/portfolio/cabins-gimmelwald-twilight-jungfrau-switzerland.jpg">
+        <figcaption>
+          <h2>Gimmelwald, Switzerland</h2>
+        </figcaption>
+      </figure>
+    </li>
+    <li>
+      <figure>
+        <img src="" alt="Christmas at Piazza San Carlo, Torino, Italy" class="lazyload" data-src="img/portfolio/piazza-san-carlo-christmas-torino-italy.jpg">
+        <figcaption>
+          <h2>Piazza San Carlo, Italy</h2>
+        </figcaption>
+      </figure>
+    </li>
+    <li>
+      <figure>
+        <img src="" alt="Haystack Rock, Cannon Beach, Oregon" class="lazyload" data-src="img/portfolio/haystack-rock-cannon-beach-oregon.jpg">
+        <figcaption>
+          <h2>Haystack Rock, Oregon</h2>
+        </figcaption>
+      </figure>
+    </li>
+    <li>
+      <figure>
+        <img src="" alt="Chalets beneath the Bavarian Alps, Geroldsee, Germany" class="lazyload" data-src="img/portfolio/chalets-geroldsee-alps-bavaria-germany.jpg">
+        <figcaption>
+          <h2>Geroldsee, Bavaria</h2>
+        </figcaption>
+      </figure>
+    </li>
+    <li>
+      <figure>
+        <img src="" alt="San Gimignano, Tuscany, Italy" class="lazyload" data-src="img/portfolio/village-san-gimignano-tuscany-italy.jpg">
+        <figcaption>
+          <h2>San Gimignano, Italy</h2>
+        </figcaption>
+      </figure>
+    </li>
+    <li>
+      <figure>
+        <img src="" alt="Hallstatt, Austria" class="lazyload" data-src="img/portfolio/hallstatt-austria.jpg">
+        <figcaption>
+          <h2>Hallstatt, Austria</h2>
+        </figcaption>
+      </figure>
+    </li>
+    <li>
+      <figure>
+        <img src="" alt="Sella Towers in the Dolomites, Tyrol, Italy" class="lazyload" data-src="img/portfolio/sella-towers-dolomites-tyrol-italy.jpg">
+        <figcaption>
+          <h2>Sella Towers, Italy</h2>
+        </figcaption>
+      </figure>
+    </li>
+    <li>
+      <a rel="noopener noreferrer" target="_blank" href="https://www.flickr.com/photos/nybblr/sets/72157689322762261" class="card see-more">
+        <section>
+          <p>
+            See more photography<br>
+            from around the world.
+          </p>
+          <hr>
+          <h1>Landscape Portfolio ›</h1>
+        </section>
+      </a>
+    </li>
+  </ul>
+  <script src="home/index.js"></script>
 </body>
+
 </html>
