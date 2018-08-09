@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-css": "postcss *.css -d build/",
-    "build-js": "uglifyjs -c -m -o build/bundle.js -- index.js"
+    "build-css": "postcss *.css -d home/",
+    "build-js": "uglifyjs -c -m -o home/index.js -- index.js"
   },
   "author": "",
   "license": "ISC",
