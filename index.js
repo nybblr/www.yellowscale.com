@@ -35,4 +35,32 @@ toggleMenu.forEach(function(ele) {
   ele.addEventListener('click', handleToggle);
 });
 
+var gallery = document.querySelector('.gallery');
+var images = document.querySelectorAll('.gallery > li');
+var scrollContainer = document.scrollingElement;
+images.forEach(function(image, i) {
+  image.addEventListener('click', function(event) {
+    event.preventDefault();
+
+    var style = getComputedStyle(gallery);
+    var zoom = parseInt(style.getPropertyValue('--per-row'), 10);
+
+    var top = (zoom * image.offsetTop - scrollContainer.scrollTop) / ((zoom - 1) || 1);
+    var left = (100 / (zoom - 1) * (i % zoom)) || 0;
+
+    if (gallery.classList.contains('focus')) {
+        gallery.style.transform = null;
+        gallery.style.transformOrigin = null;
+    } else {
+      if (perRow === 1) {
+        gallery.style.transform = `translateY(-${top}px)`;
+      } else {
+        gallery.style.transformOrigin = `${left}% ${top}px`;
+      }
+    }
+
+    gallery.classList.toggle('focus');
+  });
+});
+
 })();

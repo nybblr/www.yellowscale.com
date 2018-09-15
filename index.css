@@ -254,6 +254,8 @@ h2 {
   --per-row: 1;
   --ratio: 1.5;
 
+  position: relative;
+
   list-style: none;
   margin: 0;
   padding: 0;
@@ -265,6 +267,12 @@ h2 {
   transition-timing-function: var(--easing);
   transition-property: opacity;
   transition-delay: var(--animation-duration);
+
+  transition: transform 0.5s var(--easing);
+}
+
+.gallery.focus {
+  transform: scale(var(--per-row));
 }
 
 .menu-expanded .gallery {
